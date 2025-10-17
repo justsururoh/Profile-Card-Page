@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <article data-testid="test-profile-card">
+        <!-- Dark header with avatar and profile info -->
+        <div class="card-header">
+            <div class="header-top">
+                <figure>
+                    <img 
+                        data-testid="test-user-avatar"
+                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" 
+                        alt="Muhammed Sururat profile picture"
+                    >
+                    <figcaption>Profile Photo</figcaption>
+                </figure>
+
+                <header>
+                    <h1 data-testid="test-user-name">Muhammed Sururat</h1>
+                    <p data-testid="test-user-bio">
+                        Frontend developer passionate about building beautiful, responsive and functional web applications. Coffee enthusiast and open-source contributor.
+                    </p>
+                    <div class="time-display">
+                        Current time: <span data-testid="test-user-time">0</span>
+                    </div>
+                </header>
+            </div>
+        </div>
+
+        <!-- Main card body with connect, hobbies, and dislikes -->
+        <div class="card-body">
+            <div class="connect-section">
+                <h2>Connect</h2>
+                <nav data-testid="test-user-social-links">
+                    <a 
+                        href="https://x.com/just_sururoh?t=uwrhVBGPl_QOdqP6szrb_A&s=09" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        data-testid="test-user-social-twitter"
+                        aria-label="Twitter"
+                    >
+                        𝕏 Twitter
+                    </a>
+                    <a 
+                        href="https://github.com/justsururoh"  
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        data-testid="test-user-social-github"
+                        aria-label="GitHub"
+                    >
+                        ⚙ Github
+                    </a>
+                    <a 
+                        href="https://www.linkedin.com/in/muhammed-sururat" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        data-testid="test-user-social-linkedin"
+                        aria-label="LinkedIn"
+                    >
+                        🔗 Linkedin
+                    </a>
+                </nav>
+            </div>
+
+            <div class="lists-container">
+                <section data-testid="test-user-hobbies">
+                    <h2>Hobbies</h2>
+                    <ul>
+                        <li>Reading</li>
+                        <li>Coding</li>
+                        <li>Gaming</li>
+                        <li>Traveling</li>
+                    </ul>
+                </section>
+
+                <section data-testid="test-user-dislikes">
+                    <h2>Dislikes</h2>
+                    <ul>
+                        <li>Bugs</li>
+                        <li>Slow internet</li>
+                        <li>Meetings</li>
+                        <li>Spam</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </article>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
